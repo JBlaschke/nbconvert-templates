@@ -1,0 +1,11 @@
+--- base.html.j2.old	2022-10-25 16:39:04.058564441 -0700
++++ base.html.j2	2022-10-25 16:39:24.170256856 -0700
+@@ -163,7 +163,7 @@
+ {%- if output.svg_filename %}
+ <img src="{{ output.svg_filename | posix_path | escape_html }}">
+ {%- else %}
+-{{ output.data['image/svg+xml'].encode("utf-8") | clean_html }}
++{{ output.data['image/svg+xml'] }}
+ {%- endif %}
+ </div>
+ {%- endblock data_svg %}

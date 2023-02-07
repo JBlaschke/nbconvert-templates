@@ -1,0 +1,11 @@
+--- index.html.j2.old	2022-10-25 19:53:18.064741197 -0700
++++ index.html.j2	2022-10-25 19:55:23.211058858 -0700
+@@ -146,6 +146,8 @@
+             history: true,
+             transition: "{{reveal_transition}}",
+             slideNumber: "{{reveal_number}}",
++            width: "90%",
++            height: "90%",
+             plugins: [RevealNotes]
+         });
+ 
